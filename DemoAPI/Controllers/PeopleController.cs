@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace DemoAPI.Controllers
 {   
-
+    //NOTE: database calls should happen in class library, not in the API or any user interface
     public class PeopleController : ApiController
     {
         List<Person> people = new List<Person>();
