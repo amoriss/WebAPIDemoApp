@@ -20,9 +20,9 @@ namespace DemoAPI.Controllers
             people.Add(new Person { FirstName = "Bilbo", LastName = "Baggins", Id = 3 });
         }
 
-        [Route("api/People/GetFirstNames")]
+        [Route("api/People/GetFirstNames/{userId:int}/{age:int}")]
         [HttpGet]
-        public List<string> GetFirstName()
+        public List<string> GetFirstName(int userId, int age)
         {
             List<string> output = new List<string>();
 
