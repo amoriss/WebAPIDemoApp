@@ -8,6 +8,11 @@ using System.Web.Http;
 
 namespace DemoAPI.Controllers
 {   
+    /// <summary>
+    /// This is where I give you all information about users
+    /// </summary>
+
+
     //NOTE: database calls should happen in class library, not in the API or any user interface
     public class PeopleController : ApiController
     {
@@ -20,6 +25,12 @@ namespace DemoAPI.Controllers
             people.Add(new Person { FirstName = "Bilbo", LastName = "Baggins", Id = 3 });
         }
 
+        /// <summary>
+        /// Gets a list of the first names of all users
+        /// </summary>
+        /// <param name="userId">The unique identifier for this person</param>
+        /// <param name="age">We want to know how old they are. </param>
+        /// <returns>A list of first names</returns>
         [Route("api/People/GetFirstNames/{userId:int}/{age:int}")]
         [HttpGet]
         public List<string> GetFirstName(int userId, int age)

@@ -83,3 +83,4 @@ C:\Users\amori\repos\TimCorey\WebAPIDemoApp\DemoAPI\obj\Debug\DemoAPI.csproj.Cor
 C:\Users\amori\repos\TimCorey\WebAPIDemoApp\DemoAPI\obj\Debug\DemoAPI.csproj.CopyComplete
 C:\Users\amori\repos\TimCorey\WebAPIDemoApp\DemoAPI\obj\Debug\DemoAPI.dll
 C:\Users\amori\repos\TimCorey\WebAPIDemoApp\DemoAPI\obj\Debug\DemoAPI.pdb
+C:\Users\amori\repos\TimCorey\WebAPIDemoApp\DemoAPI\bin\Documentation.xml
