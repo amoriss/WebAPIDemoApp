@@ -19,6 +19,21 @@ namespace DemoAPI.Controllers
             people.Add(new Person { FirstName = "Sue", LastName = "Storm", Id = 2 });
             people.Add(new Person { FirstName = "Bilbo", LastName = "Baggins", Id = 3 });
         }
+
+        [Route("api/People/GetFirstNames")]
+        [HttpGet]
+        public List<string> GetFirstName()
+        {
+            List<string> output = new List<string>();
+
+            foreach (var p in people)
+            {
+                output.Add(p.FirstName);
+            }
+
+            return output;
+        }
+
         // GET: api/People
         public List<Person> Get()
         {
